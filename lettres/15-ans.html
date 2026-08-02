@@ -1,60 +1,73 @@
-<script>
+<!DOCTYPE html>
+<html lang="fr">
 
-const dateOuverture = new Date("2030-07-01T00:00:00");
+<head>
 
-function verifierLettre() {
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    const maintenant = new Date();
-    const zone = document.getElementById("contenu");
+<title>Un rendez-vous à tes 15 ans</title>
 
-    if (maintenant >= dateOuverture) {
+<style>
 
-        zone.innerHTML = `
-        <h1>Pour tes 15 ans, Fama ❤️</h1>
-
-        <p>
-        Ma chère Fama,
-        </p>
-
-        <p>
-        Cette lettre était gardée pour ce moment.
-        J'espère qu'elle t'accompagnera dans cette
-        nouvelle étape de ta vie.
-        </p>
-
-        `;
-
-    } else {
-
-        const difference = dateOuverture - maintenant;
-
-        const jours = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-        zone.innerHTML = `
-        
-        <div class="lock">🔒</div>
-
-        <h1>Une lettre pour tes 15 ans</h1>
-
-        <p>
-        Cette lettre est précieusement gardée.
-        </p>
-
-        <p>
-        Elle s'ouvrira le :
-        <strong>1er juillet 2030</strong>
-        </p>
-
-        <p>
-        Encore <strong>${jours} jours</strong>
-        avant de découvrir ces mots...
-        </p>
-
-        `;
-
-    }
+body {
+    font-family: Georgia, serif;
+    background: #fff8f2;
+    color: #4a3b32;
+    padding: 25px 15px;
+    line-height: 1.8;
 }
 
-window.onload = verifierLettre;
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
 
-</script>
+h1 {
+    text-align:center;
+    color:#8b5e3c;
+}
+
+.lock {
+    text-align:center;
+    font-size:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="lock">🔒</div>
+
+<h1>Un rendez-vous à tes 15 ans</h1>
+
+<p>
+Cette page attend simplement son moment.
+</p>
+
+<p>
+J'espère que lorsque le temps sera venu,
+<strong>in shaa Allah</strong>, nous serons encore réunis,
+avec le même amour et la même complicité,
+pour partager quelques mots autour de la jeune femme
+que tu seras devenue.
+</p>
+
+<p>
+En attendant, profite de chaque étape,
+continue de grandir, de rêver et de croire en toi. ❤️
+</p>
+
+</div>
+
+</body>
+
+</html>
